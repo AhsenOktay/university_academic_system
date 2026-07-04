@@ -1,6 +1,6 @@
 # Academic Data Management System
 
-An academic data management system developed for Antalya Belek University. It enables academic staff to manage their publications, projects, theses, patents, awards, events, courses, and memberships on a single platform.
+A web-based academic data management platform developed for Antalya Belek University. It enables academic staff to manage their publications, projects, theses, patents, awards, events, courses, and memberships on a single platform.
 
 ## Features
 
