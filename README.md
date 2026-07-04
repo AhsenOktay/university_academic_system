@@ -26,7 +26,7 @@ An academic data management system developed for Antalya Belek University. It en
 - Python 3.11+
 
 ## Project Structure
-
+```
 belek-academic-system/
 ├── backend/          # Django application
 │   ├── apps/         # Modules (publications, projects, theses...)
@@ -48,6 +48,7 @@ belek-academic-system/
 | superadmin | Admin panel, full data management |
 | academic | Dashboard, own academic outputs |
 
+```
 ## Developer
 
 Ahsen Bükre Oktay
