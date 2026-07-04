@@ -9,37 +9,68 @@ An academic data management system developed for Antalya Belek University. It en
 - One-click PDF CV download
 - Research groups with collaborative work detection
 - JWT-based authentication and role system (superadmin / academic)
-- Dynamic homepage with statistics, charts, and slider
+- Dynamic homepage with statistics and charts
 - Turkish / English language support
 
 ## Technologies
 
-**Backend:** Django 4.2, Django REST Framework, PostgreSQL (Neon DB), Celery, Redis
+- Backend: Django 4.2, Django REST Framework, PostgreSQL, Celery, Redis
+- Frontend: React 18, Vite, Ant Design, Recharts, React Router DOM
+- Infrastructure: Docker, Docker Compose, Nginx
 
-**Frontend:** React 18, Vite, Ant Design, Recharts, React Router DOM
+## Getting Started
 
-**Infrastructure:** Docker, Docker Compose, Nginx
-
-## Requirements
+### Prerequisites
 - Docker and Docker Compose
-- Node.js 18+
-- Python 3.11+
+
+### Steps
+
+1. Clone the repository:
+
+        git clone <repo-url>
+        cd <repo-name>
+
+2. Copy the environment file:
+
+        cp .env.example .env
+
+3. Start the system:
+
+        docker compose up -d
+
+4. Access the application at http://localhost:5173
+
+### Demo Login
+
+- Email: demo@belek.edu.tr
+- Password: Demo2026!
 
 ## Project Structure
-```
-belek-academic-system/
-├── backend/          # Django application
-│   ├── apps/         # Modules (publications, projects, theses...)
-│   ├── config/       # Settings and URL configuration
-│   └── requirements/ # Python dependencies
-├── frontend/         # React application
-│   ├── src/
-│   │   ├── pages/    # Page components
-│   │   └── components/ # Shared components
-│   └── package.json
-├── docker-compose.yml
-├── .env.example
-└── requirements.txt
+
+    university_academic_system/
+    backend/
+        apps/
+            publications/
+            projects/
+            theses/
+            awards/
+            patents/
+            events/
+            courses/
+            memberships/
+            research_groups/
+            users/
+        config/
+        requirements/
+    frontend/
+        src/
+            pages/
+            components/
+    nginx/
+    scripts/
+    docker-compose.yml
+    .env.example
+    requirements.txt
 
 ## User Roles
 
@@ -48,7 +79,6 @@ belek-academic-system/
 | superadmin | Admin panel, full data management |
 | academic | Dashboard, own academic outputs |
 
-```
 ## Developer
 
 Ahsen Bükre Oktay
